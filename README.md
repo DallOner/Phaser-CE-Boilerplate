@@ -6,7 +6,7 @@ My personal skeleton to create Html5 games using [Phaser](http://phaser.io/) Fra
 - Develop in states: StateManager, Boot, Load & Menu.
 - Load Assets: Dall's Logo.
 
-Plugins Installed: 
+### Plugins Installed: 
 - [Phaser-Debug](https://github.com/englercj/phaser-debug) v1.1.6
 - [Phaser-Inspector](https://github.com/netcell/phaser-inspector) v0.1
                     
