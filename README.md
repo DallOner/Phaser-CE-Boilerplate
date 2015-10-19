@@ -2,10 +2,13 @@
 My personal skeleton to create Html5 games using [Phaser](http://phaser.io/) Framework.
 
 ## Features: 
-- Phaser 2.4.2. (minified).
+- Phaser 2.4.4. (minified).
 - Develop in states: StateManager, Boot, Load & Menu.
 - Load Assets: Dall's Logo.
-- Plugins Installed: [Phaser-Debug](https://github.com/englercj/phaser-debug) 1.1.6
+- Plugins Installed: 
+[Phaser-Debug](https://github.com/englercj/phaser-debug) v1.1.6
+[Phaser-Inspector](https://github.com/netcell/phaser-inspector) v0.1
+                    
 
 ## To Install:
 
