@@ -1,5 +1,7 @@
 # Phaser-Boilerplate
-My personal skeleton to create Html5 games using [Phaser](http://phaser.io/) Framework.
+Game Development Tool to create Html5 games using [Phaser](http://phaser.io/) Framework. Useful tool for those new to the world of Phaser. Speed up your work with a simple download!
+
+"An easy to install set of skeleton classes to speed-up development start time." - Richard Darvey [@photonstorm](https://twitter.com/photonstorm)
 
 ## Features: 
 - Phaser 2.4.4. (minified).
