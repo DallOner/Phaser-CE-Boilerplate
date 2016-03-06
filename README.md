@@ -1,6 +1,6 @@
-# Phaser-Boilerplate
-![Phaser-Boilerplate Logo](https://github.com/DallOner/Phaser-Boilerplate/blob/master/assets/img/boilerplate-logo.png)
-##
+->![Phaser-Boilerplate Logo](https://github.com/DallOner/Phaser-Boilerplate/blob/master/assets/img/boilerplate-logo.png)<-
+
+## Description
 Game Development Tool to create Html5 games using [Phaser](http://phaser.io/) Framework. Useful tool for those new to the world of Phaser. Speed up your work with a simple download!
 
 "An easy to install set of skeleton classes to speed-up development start time." - Richard Darvey [@photonstorm](https://twitter.com/photonstorm)
