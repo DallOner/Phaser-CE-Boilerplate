@@ -1,5 +1,5 @@
 var w = 640,
-    h = 480;
+  h = 480;
 
 /*
 For Fullscreen put this code:
