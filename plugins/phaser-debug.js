@@ -898,7 +898,7 @@ module.exports = require("handlebars/runtime")["default"];
 },{"handlebars/runtime":8}],10:[function(require,module,exports){
 module.exports={
   "name": "phaser-debug",
-  "version": "1.1.1",
+  "version": "1.1.5",
   "description": "Simple debug module for phaser",
   "author": "Chad Engler <chad@pantherdev.com>",
   "license": "MIT",
@@ -919,6 +919,7 @@ module.exports={
   ],
   "dependencies": {
     "handlebars": "^2.0.0",
+    "node-lessify": "^0.0.5",
     "hbsfy": "^2.1.0"
   },
   "devDependencies": {
@@ -930,13 +931,16 @@ module.exports={
     "gulp-jshint": "^1.8.4",
     "gulp-util": "^3.0.1",
     "jshint-summary": "^0.4.0",
-    "node-lessify": "0.0.4",
     "vinyl-source-stream": "^0.1.1",
     "watchify": "^1.0.2"
   },
+  "main": "./dist/phaser-debug.js",
   "browser": "./src/index.js",
   "browserify": {
-    "transform": ["hbsfy", "node-lessify"],
+    "transform": [
+      "hbsfy",
+      "node-lessify"
+    ],
     "transform-options": {
       "node-lessify": "textMode"
     }
@@ -1134,7 +1138,7 @@ Performance.prototype.createPanelElement = function () {
 };
 
 Performance.prototype.update = function () {
-    this.graph.addData(this.parent.timings);
+    this.graph.addData(this.parent.timings, this.eventQueue.shift());
 };
 
 Performance.prototype.mark = function (label) {
@@ -1398,6 +1402,8 @@ function Graph(container, width, height, colors, options) {
     this.legendBoxSize = 10;
     this.legendIndent = 5;
 
+    this.eventY = this.padding * 2;
+
     this.colors = colors;
 
     this.dataCanvas = document.createElement('canvas');
@@ -1416,13 +1422,13 @@ Graph.prototype.constructor = Graph;
 module.exports = Graph;
 
 // render the graph with the new data point
-Graph.prototype.addData = function (values) {
+Graph.prototype.addData = function (values, event) {
     // clear the main canvas
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
     this.drawBg();
     this.drawLegend(values);
-    this.drawData(values);
+    this.drawData(values, event);
 };
 
 Graph.prototype.drawBg = function () {
@@ -1494,7 +1500,7 @@ Graph.prototype.drawLegend = function (values) {
     }
 };
 
-Graph.prototype.drawData = function (values) {
+Graph.prototype.drawData = function (values, event) {
     var x = this.dataCanvas.width - this.dataLineWidth + 0.5,
         y = this.dataCanvas.height - 0.5;
 
@@ -1513,6 +1519,27 @@ Graph.prototype.drawData = function (values) {
 
     // draw the buffer back to the data canvas
     this.dctx.drawImage(this.dataCanvasBuffer, 0, 0);
+
+    // draw event to the new line of the data canvas if there was one
+    if (event) {
+        this.dctx.beginPath();
+        this.dctx.strokeStyle = this.dctx.fillStyle = '#ff0000';
+        this.dctx.lineWidth = this.dataLineWidth;
+
+        this.dctx.moveTo(x, y);
+        this.dctx.lineTo(x, 0);
+
+        this.dctx.stroke();
+
+        this.dctx.textAlign = 'right';
+        this.dctx.fillText(event, x - this.padding, this.eventY);
+
+        this.eventY += (this.padding * 2);
+
+        if (this.eventY > (this.dataCanvas.height / 2)) {
+            this.eventY = (this.padding * 2);
+        }
+    }
 
     // draws the data values to the new line of the data canvas
 
