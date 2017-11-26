@@ -26,8 +26,5 @@ Or checkout the [Tagged Release](https://github.com/DallOner/Phaser-Boilerplate/
 
 ## Credits
 
-englercj - Creator of Phaser Debug
-netcell - Creator of Phaser Inspector
-lewster32 - Creator of Phaser Isometric
-Orange Games - Creator of Phaser Input & SuperStorage
+englercj, netcell, lewster32, Orange Games...
 ### Special Thanks to all those people who have given me support and their valuable feedback
