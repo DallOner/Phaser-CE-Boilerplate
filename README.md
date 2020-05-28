@@ -3,7 +3,7 @@
 <div align="center"><img src="https://github.com/DallOner/Phaser-Boilerplate/blob/master/assets/img/boilerplate-logo.png"></div>
 
 ## Description
-Game Development Tool to create awesome Html5 games using [Phaser CE (Community Edition)](http://phaser.io/) Framework. Useful tool for those newbies to the world of Phaser. Speed up your work with a simple download!
+Game Development Tool to create awesome Html5 games using [Phaser CE (Community Edition)](https://github.com/photonstorm/phaser-ce) Framework. Useful tool for those newbies to the world of Phaser. Speed up your work with a simple download!
 
 "An easy to install set of skeleton classes to speed-up development start time." - [Richard Darvey](https://twitter.com/photonstorm)
 
