@@ -8,7 +8,7 @@ Game Development Tool to create awesome Html5 games using [Phaser CE (Community 
 "An easy to install set of skeleton classes to speed-up development start time." - [Richard Darvey](https://twitter.com/photonstorm)
 
 ## Features: 
-- Phaser 2.13.1. (minified).
+- Phaser 2.15.1. (minified).
 - Some plugins for better performance.
 - Develop in State mode: StateManager, Boot, Load & Menu.
 - Load Assets: Boilerplate Logo.
