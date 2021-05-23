@@ -1,14 +1,14 @@
-> Notice: This repository continues updating the Phaser CE library as it comes out or as I find out about a new version. The future of this boilerplate is uncertain since we do not know the future success / failure of Phaser 3. At the moment for personal use I continue with this and recommending the use of the CE version. Version 3 is solid but very green in terms of Docs, tutorials and interested in the subject (At the time I write this) It is also advisable to try it and each one will draw their own conclusions.
+> Notice: This repository continues updating the Phaser CE library as it comes out or as I find out about a new version. I highly recommend to newcomers, please use Phaser 3, there are currently endless good tutorials and documentation for the version 3. If you want to try the new way of working with phaser, take the first step!
 
 <div align="center"><img src="https://github.com/DallOner/Phaser-Boilerplate/blob/master/assets/img/boilerplate-logo.png"></div>
 
 ## Description
-Game Development Tool to create awesome Html5 games using [Phaser CE (Community Edition)](https://github.com/photonstorm/phaser-ce) Framework. Useful tool for those newbies to the world of Phaser. Speed up your work with a simple download!
+Game Development Tool to create awesome Html5 games using [Phaser CE (Community Edition)](https://github.com/photonstorm/phaser-ce) Framework. Useful tool for those newbies or Pros in the world of Phaser. Speed up your work with a simple download!
 
 "An easy to install set of skeleton classes to speed-up development start time." - [Richard Darvey](https://twitter.com/photonstorm)
 
 ## Features: 
-- Phaser 2.15.1. (minified).
+- Phaser 2.18.0. (full & minified).
 - Some plugins for better performance.
 - Develop in State mode: StateManager, Boot, Load & Menu.
 - Load Assets: Boilerplate Logo.
@@ -19,10 +19,11 @@ Game Development Tool to create awesome Html5 games using [Phaser CE (Community 
 - [Phaser-Isometric](https://github.com/lewster32/phaser-plugin-isometric) v0.9.4
 - [Phaser-Input](https://github.com/azerion/phaser-input) v2.0.5
 - [Phaser-SuperStorage](https://github.com/azerion/phaser-super-storage) v1.0.4 
+> NOTE: These third-party plugins are no longer being maintained but are still VERY USEful for developing games with Phaser CE.
 
 ## To Install:
 Clone the git repo:
-`git clone https://github.com/DallOner/Phaser-Boilerplate.git`
+`git clone https://github.com/DallOner/Phaser-CE-Boilerplate.git`
 
 Or Download the .zip file!
 
